@@ -29,9 +29,13 @@ pip install sklearn
 ## Running
 
 The feature production is stored in ./traffic_iden/feature_map.py. 
+
 The model architecture is stored in ./traffic_iden/cap_model.py. 
+
 The code of flash data processing is stored in ./flash_processing/. 
+
 The code of log recovery is stored in ./log_recovery/. 
+
 The ./malware_demo/ stores some malware scripts and binary. 
 
 ## Model Interpretability
@@ -42,6 +46,7 @@ The ./malware_demo/ stores some malware scripts and binary.
 ## Interpretability Instances
 
 The attribution matrix generation refers to the Integrated Gradients method from Captum. 
+
 The ./eval/png/ stores some interpretability cases for multi-stage malware infection. 
 
 ![avatar](./eval/interp.png)
