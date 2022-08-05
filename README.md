@@ -26,11 +26,25 @@ pip install sklearn
 
 - W25Q128FV Flash chip: [W25Q128FV Datasheet](https://www.pjrc.com/teensy/W25Q128FV.pdf)
 
+## Running
+
+The feature production is stored in ./traffic_iden/feature_map.py. 
+The model architecture is stored in ./traffic_iden/cap_model.py. 
+The code of flash data processing is stored in ./flash_processing/. 
+The code of log recovery is stored in ./log_recovery/. 
+The ./malware_demo/ stores some malware scripts and binary. 
 
 ## Model Interpretability
 
 - Captum: [Captum: Model Interpretability for PyTorch](https://captum.ai/)
   - e.g., Attribution map
+
+## Interpretability Instances
+
+The attribution matrix generation refers to the Integrated Gradients method from Captum. 
+The ./eval/png/ stores some interpretability cases for multi-stage malware infection. 
+
+![avatar](./eval/inter.png)
 
 ### References
 - [Kitsune: An Ensemble of Autoencoders for Online Network Intrusion Detection](https://arxiv.org/abs/1802.09089), Yisroel Mirsky, Tomer Doitshman, Yuval Elovici, and Asaf Shabtai - NDSS 2018
